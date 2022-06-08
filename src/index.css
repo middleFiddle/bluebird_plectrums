@@ -1,13 +1,89 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Berkshire+Swash&family=Love+Light&family=Neonderthaw&family=Neucha&family=Reenie+Beanie&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: linear-gradient(rgba(150, 208, 255, 0.721), transparent),
+    linear-gradient(to top left, rgb(181, 212, 249), transparent),
+    linear-gradient(to top right, #fef1e5, transparent);
+  background-blend-mode: screen;
+  font-family: 'Aladin', cursive;
+  /*font-family: 'Aladin', cursive;*/
+  /*font-family: 'Reenie Beanie', cursive;*/
+  /*   font-family: 'Neucha', cursive; */
+  /*font-family: 'Neonderthaw', cursive; */
+  /*font-family: 'Love Light', cursive;*/
+  font-size: 32px;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(to left, #ffabab, rgba(255, 116, 116, 0.449));
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description {
+  padding-top: 3%;
+}
+
+.product {
+  font-family: 'Neonderthaw';
+  display: flex;
+  margin: 3%;
+
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: fit-content;
+}
+
+.product img {
+  width: 36%;
+  border-radius: 10%;
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgba(137, 251, 177, 0.222);
+}
+
+.text-gradient {
+  background: linear-gradient(
+    to left,
+    rgba(7, 93, 199, 0.665),
+    rgba(7, 93, 199, 0.42)
+  );
+  color: transparent;
+  background-clip: text;
+}
+
+.text-gradient2 {
+  color: rgba(72, 3, 3, 0.828);
+  font-family: 'Aladin';
+}
+
+.copy {
+  width: 65%;
+  margin: 0;
+  padding-top: 3%;
+  font-family: 'Aladin';
+  text-align: center;
+}
+
+.footer {
+  margin: 0;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  font-family: 'Neonderthaw';
+  color: rgb(0, 40, 88);
 }
